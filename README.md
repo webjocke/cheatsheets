@@ -1,2 +1,2 @@
 # cheatsheets
-Cheat Sheets for the techniques I know
+Cheat Sheets for the techniques I use
