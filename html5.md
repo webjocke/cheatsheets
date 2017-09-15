@@ -21,7 +21,7 @@ A great tool for new users when building websites. Checkout the [wikipedia](http
 ```
 
 ## Important notes
-* ```html <!DOCTYPE html>``` should be user to tell the browser that this is a html5 document
+* ```<!DOCTYPE html>``` should be user to tell the browser that this is a html5 document
 * Most HTML-tags need an ending tag but not all, like the link, meta and br tag.
 * The biggest differans between differant tagnames is the default CSS styling they have, wich always can be overwriten. BUT some tags have special functions that none of the other tags have. The form- and a-tag for example.
 
