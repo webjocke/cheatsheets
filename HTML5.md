@@ -57,7 +57,7 @@ br | Linebreak, will break the line with the current line-height
 
 ## Common Attributes
 
-Tagname | Description
+Attribute Name | Description
 ---------- | -------------------------------
 width | main tag that contains everything
 height | main tag that contains everything
