@@ -12,10 +12,29 @@ A great tool for new users when building websites. Checkout the [wikipedia](http
 <html>
     <head>
         <title>Website Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <h1>Headline</h1>
         <p>A paragraph text</p>
+    </body>
+</html>
+```
+
+## Website with external script- and style-files
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mystyles.css">
+    </head>
+    <body>
+        <h1>Headline</h1>
+        <p>A paragraph text</p>
+
+        <script src="myscripts.js"></script>
     </body>
 </html>
 ```
@@ -36,7 +55,7 @@ body | Contains all the visible stuff on your website
 meta | Is used to add some metadata to the website, like encoding and SEO stuff
 link | Is used to import styling files using the src-attribute
 script | Is used to import javascript files using the src-attribute
-form | 
+form | Used to wrapp a lot of input tags, in order to submit the data to a server after clicking submit
 div | A container-tag that has default css display:block, otherwise nothing speciall
 span | A container-tag that has default css display:inline, otherwise nothing speciall
 main | Same as div, but is used to contain the main section of the website
@@ -59,26 +78,36 @@ br | Linebreak, will break the line with the current line-height
 
 Attribute Name | Description
 ---------- | -------------------------------
-width | main tag that contains everything
-height | main tag that contains everything
-style | main tag that contains everything
-src | main tag that contains everything
-href | main tag that contains everything
-title | main tag that contains everything
-alt | main tag that contains everything
-type | main tag that contains everything
-rel | main tag that contains everything
-charset | main tag that contains everything
+width | The width of the element
+height | The height of the element
+style | Used to write inline css that is only used for this element
+src | Used on images, scripts-tags and style-tags to link to the source data for the tag, for example a path to an image or css file
+href | Makes an a-tag och a button-tag link to a specific url
+title | The title of an element, creates a tooltip over images on hover, also great for "read website out loud" programs
+alt | Old way of setting the title of an image, may still have some other functions aswell
+type | Specifies the type of a linked resource, for example a "text/css"-type
+rel | Tells the browser how it should see the resource, for example a "stylesheet"
+charset | Used on a meta-tag inside the head section, lets the browser know that this is a for example "UTF-8" webpage
 
 
 ## Tips and tricks
+Use CSS Grid to line elements up!
+Not written yet.
 
 ### Inline CSS
+Not written yet.
 
 ### Name the tags yourself
+Not written yet.
 
-### Importing scripts
-You should always import javascripts at the end of your html document. Just before the ending body-tag is recommended.
+### Importing external resources
+You should always import javascripts at the end of your html document, just before the body's end-tag. CSS files should be imported in the head section as usual.
+
+# Great resources
+[Google PageSpeed Insight](https://developers.google.com/speed/pagespeed/insights/) - To meschure a websites loading times and getting tips on how to improve it
+[Official Mozzila HTML Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) - Info about all of the normal html tags
+[HTML5 Developers Documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Info about all the new functions that HTML5 comes with
+[W3's HTML Syntax Checker](https://validator.w3.org/) - Great for finding unneeded and rendundant elements on a big website
 
 # Contribute!
 Want to help improve this cheatsheet? Just create a pull request and I will look it over :)
